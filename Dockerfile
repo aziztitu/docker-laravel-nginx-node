@@ -3,7 +3,7 @@ FROM webdevops/php-nginx:7.4
 RUN apt-get update
 #RUN apt-get upgrade -y
 #RUN apt-get dist-upgrade -y
-RUN apt-get install -y curl libpng-dev
+RUN apt-get install -y curl libpng-dev default-mysql-client
 
 # Install Node.js
 RUN curl -sL https://deb.nodesource.com/setup_14.x | bash
